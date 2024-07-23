@@ -55,12 +55,12 @@ export default function Projects() {
                   ) : null}
                 </div>
               </div>
-              <div className="flex text-neutral-600  dark:text-neutral-400 italic space-x-2">
+              <div className="flex flex-1 flex-wrap  text-neutral-600  dark:text-neutral-400 italic ">
                 {project.tech.split(",").map((item) => {
                   return (
                     <p
                       key=""
-                      className="dark:bg-neutral-700 bg-neutral-300 px-2 rounded-full"
+                      className="dark:bg-neutral-700 bg-neutral-300 px-2 rounded-full mr-2 my-1"
                     >
                       {item}
                     </p>
