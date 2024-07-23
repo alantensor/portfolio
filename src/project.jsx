@@ -28,7 +28,7 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.75, delay: i * 0.2 }}
               key={i}
-              className="bg-neutral-100 shadow-xl dark:bg-neutral-800 text-black  dark:text-white  w-full max-w-2xl p-6 rounded-2xl space-y-3"
+              className="bg-neutral-100 shadow-xl dark:bg-neutral-800 text-black  dark:text-white  max-w-2xl p-6 rounded-2xl space-y-3"
             >
               <img
                 src={imagePath}
