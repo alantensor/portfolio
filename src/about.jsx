@@ -31,7 +31,7 @@ export default function About() {
         </footer>
       </blockquote>
 
-      <div className="grid grid-cols-4 gap-10 p-5 bg-neutral-100 rounded-2xl dark:bg-black">
+      <div className="grid grid-cols-4 gap-10 p-5 shadow-xl bg-neutral-100 rounded-2xl dark:bg-black">
         {ts.map((icon, i) => {
           const imagePath =
             images[`./assets/technologies/${icon.imageName}`]?.default;
@@ -55,10 +55,10 @@ export default function About() {
         enjoy playing basketball, hiking the BC backcountry, and making music.
       </p>
       <div className="mt-8 grid grid-cols-6 col-span-2 gap-2">
-        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem] ">
           <img className="h-full w-full object-cover " src={about} alt="" />
         </div>
-        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem] ">
           <img className="h-full w-full object-cover  " src={canyon} alt="" />
         </div>
       </div>

@@ -30,11 +30,14 @@ export default function Wrapper() {
   return (
     <div
       id="scroll-container"
-      className="flex flex-col h-auto pt-32 2xl:pt-56 text-neutral-400 bg-white dark:text-neutral-400 dark:bg-black"
+      className="flex flex-col h-auto pt-32 2xl:pt-56 text-neutral-700 bg-white transition-colors dark:text-neutral-400 dark:bg-black "
     >
-      <div id="home" className="flex flex-col max-w-xl md:m-auto p-10 ">
+      <div
+        id="home"
+        className="flex flex-col max-w-2xl m-auto p-12 rounded-2xl max-h-96 select-none"
+      >
         <motion.div
-          className="flex items-center space-x-5 md:space-x-10"
+          className="flex items-center md:justify-center space-x-5 md:space-x-10  "
           initial={{ opacity: 0, y: -65 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
@@ -46,26 +49,26 @@ export default function Wrapper() {
           </p>
         </motion.div>
         <motion.div
-          className=" md:text-xl mt-5 md:leading-loose"
+          className=" md:text-xl mt-5 md:leading-loose max-w-72 md:max-w-md md:ml-12 "
           initial={{ opacity: 0, y: -45 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ delay: 0.2 }}
         >
-          <span>
+          <div>
             Developer and open-source enthusiast. Currently studying CS +
             Physics{" @"}
             <a
               href="https://www.ubc.ca/"
-              className="underline decoration-solid hover:text-white transition ease-in duration-100 "
+              className="underline decoration-solid dark:hover:text-white transition ease-in duration-100 "
             >
               UBC.
             </a>{" "}
-          </span>
-          Feel free to connect!
+            Feel free to connect!
+          </div>
         </motion.div>
         <motion.div
-          className="flex text-neutral-400 dark:text-white mt-8 p-4 bg-neutral-100 dark:bg-neutral-800 rounded-xl space-x-10 text-2xl max-w-80 justify-center "
+          className="flex text-neutral-400 dark:text-white mt-8 md:ml-12 p-4 bg-neutral-100 shadow-xl dark:bg-neutral-800 rounded-xl space-x-10 text-2xl max-w-80 justify-center "
           initial={{ opacity: 0, y: -25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
@@ -89,7 +92,7 @@ export default function Wrapper() {
           <a className="hover:opacity-60" href="mailto:alanzhou318@gmail.com">
             <FaEnvelope />
           </a>
-          <a className="hover:opacity-60" href="/resume.pdf" target="blank">
+          <a className="hover:opacity-60" href="/resume2.pdf" target="blank">
             <IoDocumentTextOutline />
           </a>
         </motion.div>

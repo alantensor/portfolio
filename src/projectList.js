@@ -1,11 +1,29 @@
 export const projects = [
   {
+    title: "CHIP-8 Emulator",
+    description:
+    "Implemented the complete set of 35 CHIP-8 opcodes in C, with a customizable 64x32 monochrome display.",
+    github: "https://github.com/alantensor/CHIP-8-Emulator",
+    imageName: "chip-8.png",
+    tech: "C,SDL2",
+  },
+  {
+    title: "UBC Talks",
+    description:
+    "Simple reddit-esque web app for student discussion about UBC courses, built with Next.js and Supabase",
+    github:"https://github.com/alantensor/ubc-talks",
+    imageName:"ubc-talks.png",
+    tech: "Typescript,Next.js,Postgres,Docker",
+    href: "https://ubc-talks-264ncfoefq-uw.a.run.app/home"
+
+  },
+  {
     title: "Real-Time Fluid Simulation",
     description:
       "Fluid simulation written in C++ using the SFML library. Physics implemented from scratch using grid-based approach with custom velocity and density solvers.",
     github: "https://github.com/alantensor/simplified-fluid-sim",
     imageName: "fluid.png",
-    tech: "C++, SFML",
+    tech: "C++,SFML",
   },
   {
     title: "Persective Projection",
@@ -14,7 +32,7 @@ export const projects = [
     href: "https://alantensor.github.io/pages/projects/cameratest/",
     github: "https://github.com/alantensor/3D-Camera-Test",
     imageName: "cubes.png",
-    tech: "JavaScript, HTML, CSS",
+    tech: "JavaScript,HTML,CSS",
   },
   {
     title: "PrettyGrader",
@@ -22,14 +40,14 @@ export const projects = [
       "A Chrome extension using HTML, CSS, and JavaScript that revamped the default UI of the autograder for my CPSC 110 class, used by over 800 students.",
     github: "https://github.com/alantensor/prettygrader",
     imageName: "grader.png",
-    tech: "JavaScript, HTML, CSS",
+    tech: "JavaScript,HTML,CSS",
   },
   {
     title: "Personal Website",
     description: "My portfolio website, made with React (Vite) and Tailwind.",
     github: "https://github.com/alantensor/prettygrader",
     imageName: "website.jpg",
-    tech: "React, Tailwind",
+    tech: "React,Tailwind",
   },
   // {
   //   title: "Personal Website",

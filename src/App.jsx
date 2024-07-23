@@ -24,12 +24,12 @@ function App() {
 
   return (
     <>
-      <nav className="hidden md:flex p-3 justify-center space-x-4 opacity-75  bg-neutral-900 sticky top-0 ">
+      <nav className="hidden md:flex p-3 justify-center space-x-4 bg-neutral-900 sticky top-0 z-50 ">
         {[
           ["HOME", "#", "home"],
           ["PROJECTS", "#projects", "projects"],
           ["ABOUT", "#about", "about"],
-        ].map(([title, url, sn]) => (
+        ].map(([title, url]) => (
           <a
             key={title}
             href={url}
