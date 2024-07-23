@@ -34,7 +34,7 @@ export default function Wrapper() {
     >
       <div
         id="home"
-        className="flex flex-col max-w-2xl m-auto p-12 rounded-2xl max-h-96 select-none"
+        className="flex flex-col max-w-2xl m-auto  rounded-2xl max-h-96 select-none"
       >
         <motion.div
           className="flex items-center md:justify-center space-x-5 md:space-x-10  "
