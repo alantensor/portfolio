@@ -38,10 +38,8 @@ export default function Wrapper() {
       >
         <motion.div
           className="flex items-center md:justify-center space-x-5 md:space-x-10  "
-          initial={{ opacity: 0, y: -65 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
-          transition={{ delay: 0 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <img
             src={cartoon}
@@ -54,9 +52,8 @@ export default function Wrapper() {
         </motion.div>
         <motion.div
           className=" md:text-xl mt-5 md:leading-loose max-w-72 md:max-w-md md:ml-12 "
-          initial={{ opacity: 0, y: -45 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
           <div>
@@ -73,9 +70,8 @@ export default function Wrapper() {
         </motion.div>
         <motion.div
           className="flex text-neutral-400 dark:text-white mt-8 md:ml-12 p-4 bg-neutral-100 shadow-xl dark:bg-neutral-800 rounded-xl space-x-10 text-2xl max-w-80 justify-center "
-          initial={{ opacity: 0, y: -25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
           <a className="hover:opacity-60" href="https://github.com/alantensor">
