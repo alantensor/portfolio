@@ -43,7 +43,11 @@ export default function Wrapper() {
           viewport={{ once: true, amount: 0.8 }}
           transition={{ delay: 0 }}
         >
-          <img src={cartoon} className="h-24 w-24 rounded-full" />
+          <img
+            src={cartoon}
+            className="h-24 w-24 rounded-full"
+            alt="profile picture"
+          />
           <p className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient">
             Hi, I'm Alan.
           </p>

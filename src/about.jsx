@@ -37,7 +37,11 @@ export default function About() {
             images[`./assets/technologies/${icon.imageName}`]?.default;
           return (
             <div key={i} className="hover-trigger items-center">
-              <img src={imagePath} className="h-16 w-16 object-contain" />
+              <img
+                src={imagePath}
+                className="h-16 w-16 object-contain"
+                alt="project image"
+              />
               <div className="absolute p-2 h-16 w-16 text-center text-sm text-black dark:text-white hover-target">
                 {icon.name}
               </div>
@@ -54,12 +58,20 @@ export default function About() {
         and a love for tackling new challenges. When I'm not at the computer, I
         enjoy playing basketball, hiking the BC backcountry, and making music.
       </p>
-      <div className="mt-8 grid grid-cols-6 col-span-2 gap-2">
+      <div className="mt-8 grid grid-cols-6 col-span-2 gap-2 max-w-xl">
         <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem] ">
-          <img className="h-full w-full object-cover " src={about} alt="" />
+          <img
+            className="h-full w-full object-cover "
+            src={about}
+            alt="hobbies"
+          />
         </div>
         <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem] ">
-          <img className="h-full w-full object-cover  " src={canyon} alt="" />
+          <img
+            className="h-full w-full object-cover  "
+            src={canyon}
+            alt="hobbies"
+          />
         </div>
       </div>
     </motion.div>
