@@ -92,7 +92,11 @@ export default function Wrapper() {
           <a className="hover:opacity-60" href="mailto:alanzhou318@gmail.com">
             <FaEnvelope />
           </a>
-          <a className="hover:opacity-60" href="/resume2.pdf" target="blank">
+          <a
+            className="hover:opacity-60"
+            href="/resume_2024.pdf"
+            target="blank"
+          >
             <IoDocumentTextOutline />
           </a>
         </motion.div>

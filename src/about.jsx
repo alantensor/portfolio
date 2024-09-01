@@ -52,23 +52,24 @@ export default function About() {
       <h2 className="mt-8">Some tech I use</h2>
 
       <p className="mt-8 max-w-3xl leading-loose">
-        Based in Vancouver, British Columbia, I'm a developer with a passion for
-        developing seamless, efficient, and user-friendly applications. My
-        journey in technology is driven by a commitment to continuous learning
-        and a love for tackling new challenges. When I'm not at the computer, I
-        enjoy playing basketball, hiking the BC backcountry, and making music.
+        Based in Vancouver, British Columbia, I&apos;m a developer with a
+        passion for developing seamless, efficient, and user-friendly
+        applications. My journey in technology is driven by a commitment to
+        continuous learning and a love for tackling new challenges. When
+        I&apos;m not at the computer, I enjoy playing basketball, hiking the BC
+        backcountry, and making music.
       </p>
-      <div className="mt-8 grid grid-cols-6 col-span-2 gap-2 max-w-xl">
-        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem] ">
+      <div className="flex space-x-4 max-w-3xl mt-8">
+        <div className="overflow-hidden rounded-xl max-h-[14rem]">
           <img
-            className="h-full w-full object-cover "
+            className="h-full w-full object-cover"
             src={about}
             alt="hobbies"
           />
         </div>
-        <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem] ">
+        <div className="overflow-hidden rounded-xl max-h-[14rem]">
           <img
-            className="h-full w-full object-cover  "
+            className="h-full w-full object-cover"
             src={canyon}
             alt="hobbies"
           />

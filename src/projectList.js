@@ -1,13 +1,5 @@
 export const projects = [
   {
-    title: "CHIP-8 Emulator",
-    description:
-    "Implemented the complete set of 35 CHIP-8 opcodes in C, with a customizable 64x32 monochrome display.",
-    github: "https://github.com/alantensor/CHIP-8-Emulator",
-    imageName: "chip-8.png",
-    tech: "C,SDL2",
-  },
-  {
     title: "UBC Talks",
     description:
     "Simple reddit-esque web app for student discussion about UBC courses, built with Next.js and Supabase",
@@ -16,6 +8,14 @@ export const projects = [
     tech: "Typescript,Next.js,Postgres,Docker",
     href: "https://ubc-talks-264ncfoefq-uw.a.run.app/home"
 
+  },
+  {
+    title: "CHIP-8 Emulator",
+    description:
+    "Implemented the complete set of 35 CHIP-8 opcodes in C, with a customizable 64x32 monochrome display.",
+    github: "https://github.com/alantensor/CHIP-8-Emulator",
+    imageName: "chip-8.png",
+    tech: "C,SDL2",
   },
   {
     title: "Real-Time Fluid Simulation",
