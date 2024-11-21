@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Leet Me In",
+    description:
+    "AI for mock coding interview practice",
+    github:"https://github.com/austinluk/interview-prep-app",
+    imageName:"lmi-new.jpg",
+    tech: "Typescript,Next.js,Web Speech API",
+    href: "https://interview-prep-app-seven.vercel.app/"
+
+  },
+  {
     title: "UBC Talks",
     description:
     "Simple reddit-esque web app for student discussion about UBC courses, built with Next.js and Supabase",
