@@ -1,4 +1,13 @@
 export const projects = [
+	{
+		title: "Persective Projection",
+		description:
+		  "Rendering polygons through a moving camera using perspective projection and linear algebra. ",
+		href: "https://alantensor.github.io/pages/projects/cameratest/",
+		github: "https://github.com/alantensor/3D-Camera-Test",
+		imageName: "cubes.png",
+		tech: "JavaScript,HTML,CSS",
+	  },
   {
     title: "Leet Me In",
     description:
@@ -30,20 +39,12 @@ export const projects = [
   {
     title: "Real-Time Fluid Simulation",
     description:
-      "Fluid simulation written in C++ using the SFML library. Physics implemented from scratch using grid-based approach with custom velocity and density solvers.",
+      "Fluid simulation, implemented from scratch using grid-based approach",
     github: "https://github.com/alantensor/simplified-fluid-sim",
     imageName: "fluid.png",
     tech: "C++,SFML",
   },
-  {
-    title: "Persective Projection",
-    description:
-      "Created 3D pipeline from scratch in JavaScript to render polygons through a moving camera using perspective projection and linear algebra. ",
-    href: "https://alantensor.github.io/pages/projects/cameratest/",
-    github: "https://github.com/alantensor/3D-Camera-Test",
-    imageName: "cubes.png",
-    tech: "JavaScript,HTML,CSS",
-  },
+  
   {
     title: "PrettyGrader",
     description:

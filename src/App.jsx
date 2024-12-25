@@ -24,11 +24,11 @@ function App() {
 
   return (
     <>
-      <nav className="hidden md:flex p-3 justify-center space-x-4 bg-neutral-900 sticky top-0 z-50 ">
+      <nav className="hidden md:flex p-3 justify-center space-x-4 bg-inherit">
         {[
-          ["HOME", "#", "home"],
-          ["PROJECTS", "#projects", "projects"],
-          ["ABOUT", "#about", "about"],
+          ["Home", "#", "home"],
+          ["Projects", "#projects", "projects"],
+          ["About", "#about", "about"],
         ].map(([title, url]) => (
           <a
             key={title}
