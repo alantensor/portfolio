@@ -1,13 +1,16 @@
 import { useState } from "react";
 import Wrapper from "./wrapper";
 import { FaSun, FaMoon } from "react-icons/fa";
+import { useEffect } from "react";
 
 function App() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? JSON.parse(savedTheme) : true;
+  });
 
-  const toggleDarkMode = () => {
-    setIsDark(!isDark);
-    if (!isDark) {
+  useEffect(() => {
+    if (isDark) {
       document.body.classList.add("dark");
       document.documentElement.style.setProperty(
         "--scrollbar-bg-color",
@@ -20,20 +23,25 @@ function App() {
         "white"
       );
     }
+    localStorage.setItem("theme", JSON.stringify(isDark));
+  }, [isDark]);
+
+  const toggleDarkMode = () => {
+    setIsDark(!isDark);
   };
 
   return (
     <>
-      <nav className="hidden md:flex p-3 justify-center space-x-4 bg-neutral-900 sticky top-0 z-50 ">
+      <nav className="hidden md:flex p-3 justify-center space-x-4 bg-inherit">
         {[
-          ["HOME", "#", "home"],
-          ["PROJECTS", "#projects", "projects"],
-          ["ABOUT", "#about", "about"],
+          ["Home", "#", "home"],
+          ["About", "#about", "about"],
+          ["Projects", "#projects", "projects"],
         ].map(([title, url]) => (
           <a
             key={title}
             href={url}
-            className=" rounded-lg px-3 py-2 text-neutral-400 text-xs font-medium hover:text-neutral-300 transition ease-in duration-100"
+            className=" rounded-lg px-3 py-2 text-black dark:text-neutral-400 text-xs font-medium hover:opacity-60 transition ease-in duration-100"
           >
             {title}
           </a>

@@ -3,6 +3,7 @@ import About from "./about";
 import Projects from "./project";
 import { FaArrowDown } from "react-icons/fa6";
 import { motion } from "framer-motion";
+// import Globe from 'react-globe.gl';
 
 import {
   FaGithub,
@@ -14,113 +15,97 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
 
 export default function Wrapper() {
-  const [isAnimating, setIsAnimating] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsAnimating(false);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <div
       id="scroll-container"
-      className="flex flex-col h-auto pt-32 2xl:pt-56 text-neutral-700 bg-white transition-colors dark:text-neutral-400 dark:bg-black "
+      className="flex flex-col h-auto my-8 text-neutral-700 bg-white transition-colors dark:text-neutral-400 dark:bg-black space-y-5"
     >
       <div
         id="home"
-        className="flex flex-col max-w-2xl m-auto  rounded-2xl max-h-96 select-none"
+        className="flex flex-row justify-between min-w-full m-auto border-2 border-neutral-800 rounded-2xl lg:max-w-[50%] lg:min-w-[50%] lg:min-h-64 max-h-96 select-none items-center"
       >
-        <motion.div
-          className="flex items-center md:justify-center space-x-5 md:space-x-10  "
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <img
+        <div className="flex flex-col space-y-5 w-full sm:w-[55%] py-10 pl-10">
+          <motion.div
+            className=""
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            {/* <img
             src={cartoon}
             className="h-24 w-24 rounded-full"
             alt="profile picture"
-          />
-          <p className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient">
-            Hi, I'm Alan.
-          </p>
-        </motion.div>
-        <motion.div
-          className=" md:text-xl mt-5 md:leading-loose max-w-72 md:max-w-md md:ml-12 "
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          <div>
-            Developer and open-source enthusiast. Currently studying CS +
-            Physics{" @"}
+          /> */}
+            {/* <p className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-orange-400 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient"> */}
+            <p className="text-2xl lg:text-5xl font-bold text-black dark:text-white">
+              Hi, I'm Alan.
+            </p>
+          </motion.div>
+          <motion.div
+            className=" "
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <div>Developer and CS student <a href="https://cs.ubc.ca" className="hover:underline">@UBC.</a></div>
+          </motion.div>
+          <motion.div
+            className="flex text-neutral-400 dark:text-white p-4 bg-neutral-100 shadow-xl dark:bg-neutral-800 rounded-xl text-2xl max-w-[75%] justify-between"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
             <a
-              href="https://www.ubc.ca/"
-              className="underline decoration-solid dark:hover:text-white transition ease-in duration-100 "
+              className="hover:opacity-60"
+              href="https://github.com/alantensor"
             >
-              UBC.
-            </a>{" "}
-            Feel free to connect!
-          </div>
-        </motion.div>
-        <motion.div
-          className="flex text-neutral-400 dark:text-white mt-8 md:ml-12 p-4 bg-neutral-100 shadow-xl dark:bg-neutral-800 rounded-xl space-x-10 text-2xl max-w-80 justify-center "
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-        >
-          <a className="hover:opacity-60" href="https://github.com/alantensor">
-            <FaGithub />
-          </a>
-          <a
-            className="hover:opacity-60"
-            href="https://www.linkedin.com/in/therealalan/"
-          >
-            <FaLinkedin />
-          </a>
-          <a
-            className="hover:opacity-60"
-            href="https://news.ycombinator.com/user?id=alantensor"
-          >
-            <FaYCombinator />
-          </a>
-          <a className="hover:opacity-60" href="mailto:alanzhou318@gmail.com">
-            <FaEnvelope />
-          </a>
-          <a
+              <FaGithub />
+            </a>
+            <a
+              className="hover:opacity-60"
+              href="https://www.linkedin.com/in/therealalan/"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              className="hover:opacity-60"
+              href="https://news.ycombinator.com/user?id=alantensor"
+            >
+              <FaYCombinator />
+            </a>
+            <a className="hover:opacity-60" href="mailto:alanzhou318@gmail.com">
+              <FaEnvelope />
+            </a>
+            {/* <a
             className="hover:opacity-60"
             href="/resume_2024.pdf"
             target="blank"
           >
             <IoDocumentTextOutline />
-          </a>
-        </motion.div>
-        <motion.div
-          className="hidden md:flex md:mt-24 2xl:mt-32 text-4xl text-black dark:text-white justify-center "
-          animate={
-            isAnimating
-              ? {
-                  y: [0, -20, 0], // Move element up to -50px and back to 0
-                }
-              : { y: 0, opacity: 0 }
-          }
-          transition={{
-            duration: 1, // Duration of the animation
-            repeat: isAnimating ? Infinity : 0, // Repeat the animation infinitely
-            repeatType: "loop", // Loop the animation
-            ease: "easeInOut", // Easing function
-          }}
-        >
-          <FaArrowDown />
-        </motion.div>
+          </a> */}
+          </motion.div>
+        </div>
+        <div className=" hidden md:block w-[45%] p-10 ">
+          <div className="w-full border-2 border-red-300 aspect-square rounded-2xl p-3 hover:-rotate-[10deg] transition-all duration-500 ease-in-out">
+            <div className="w-full border-2 border-green-300 aspect-square rounded-2xl p-3 hover:rotate-[10deg] transition-all duration-500 ease-in-out">
+              <div className="w-full border-2 border-blue-300 aspect-square rounded-2xl p-3 hover:-rotate-[10deg] transition-all duration-500 ease-in-out">
+				<img className="bg-white rounded-2xl h-full w-full aspect-square " src={cartoon}/>
+			  </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <Projects />
-      <About />
+      <div
+        id="about"
+        className="flex flex-col p-2 lg:p-10 m-auto min-w-full lg:min-w-[50%] lg:max-w-[50%] border-2 border-neutral-800 rounded-2xl select-none space-y-5"
+      >
+        <About />
+      </div>
+      <div
+        id="projects"
+        className="flex flex-col p-2 lg:p-10 min-w-full m-auto lg:min-w-[50%] lg:max-w-[50%] border-2 border-neutral-800 rounded-2xl select-none space-y-5"
+      >
+        <Projects />
+      </div>
     </div>
   );
 }
