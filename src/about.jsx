@@ -10,22 +10,20 @@ const images = import.meta.glob("./assets/technologies/*.{jpg,png,svg,webp}", {
 export default function About() {
   return (
     <motion.div
-      className="flex flex-col h-auto p-5 mx-6 md:mx-32 mt-12 mb-32 items-center "
+      className="flex flex-col h-auto p-5 items-center "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ amount: 0.33 }}
       transition={{ duration: 0.7 }}
     >
-      <h1
-        id="about"
-        className="text-4xl font-semibold text-black dark:text-white"
-      >
-        About me
-      </h1>
+      <div className=" w-full text-left">
+        <h1 className="text-3xl font-semibold text-black dark:text-white">
+          About me
+        </h1>
+      </div>
       <blockquote className="my-10 border-l-4 border-neutral-500 pl-4 text-black dark:text-gray-300 italic max-w-3xl">
         "Alan is the best software engineer I have ever met. He also bought me a
-        Porsche, saved my family from a fire, and cured my dog's cancer. Just a
-        great guy overall."
+        Porsche, saved my family from a fire, and cured my dog's cancer."
         <footer className="mt-2 text-neutral-400 dark:text-gray-500">
           - Anonymous, PM @ Google
         </footer>

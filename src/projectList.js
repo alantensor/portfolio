@@ -37,7 +37,7 @@ export const projects = [
     tech: "C,SDL2",
   },
   {
-    title: "Real-Time Fluid Simulation",
+    title: "Fluid Sim",
     description:
       "Fluid simulation, implemented from scratch using grid-based approach",
     github: "https://github.com/alantensor/simplified-fluid-sim",
@@ -48,7 +48,7 @@ export const projects = [
   {
     title: "PrettyGrader",
     description:
-      "A Chrome extension using HTML, CSS, and JavaScript that revamped the default UI of the autograder for my CPSC 110 class, used by over 800 students.",
+      "A Chrome extension that revamped the default UI of the autograder for CPSC 110, used by over 800 students.",
     github: "https://github.com/alantensor/prettygrader",
     imageName: "grader.png",
     tech: "JavaScript,HTML,CSS",

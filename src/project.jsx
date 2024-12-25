@@ -31,10 +31,10 @@ export default function Projects() {
                 src={imagePath}
                 className="image object-cover h-44 w-full rounded-xl"
               />
-              <div className="project-info absolute bottom-0 left-0 right-0 h-full bg-black bg-opacity-60 text-white p-4 opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-2xl">
+              <div className="flex flex-col justify-between project-info absolute bottom-0 left-0 right-0 h-full bg-black bg-opacity-60 text-white p-4 opacity-0 hover:opacity-100 transition-opacity duration-500 rounded-2xl">
                 <div className="flex justify-between items-center">
                   <h1 className="text-lg font-semibold">{project.title}</h1>
-                  <div className="flex space-x-3 text-black dark:text-neutral-300">
+                  <div className="flex space-x-3 text-white">
                     {project.github ? (
                       <a
                         href={project.github}
