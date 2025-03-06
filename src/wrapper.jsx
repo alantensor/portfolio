@@ -46,7 +46,12 @@ export default function Wrapper() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <div>Developer and CS student <a href="https://cs.ubc.ca" className="hover:underline">@UBC.</a></div>
+            <div>
+              Developer and CS student{" "}
+              <a href="https://cs.ubc.ca" className="hover:underline">
+                @UBC.
+              </a>
+            </div>
           </motion.div>
           <motion.div
             className="flex text-neutral-400 dark:text-white p-4 bg-neutral-100 shadow-xl dark:bg-neutral-800 rounded-xl text-2xl max-w-[75%] justify-between"
@@ -84,12 +89,15 @@ export default function Wrapper() {
           </a> */}
           </motion.div>
         </div>
-        <div className=" hidden md:block w-[45%] p-10 ">
+        <div className=" hidden md:block md:w-[45%] 2xl:w-[35%] p-10">
           <div className="w-full border-2 border-red-300 aspect-square rounded-2xl p-3 hover:-rotate-[10deg] transition-all duration-500 ease-in-out">
             <div className="w-full border-2 border-green-300 aspect-square rounded-2xl p-3 hover:rotate-[10deg] transition-all duration-500 ease-in-out">
               <div className="w-full border-2 border-blue-300 aspect-square rounded-2xl p-3 hover:-rotate-[10deg] transition-all duration-500 ease-in-out">
-				<img className="bg-white rounded-2xl h-full w-full aspect-square " src={cartoon}/>
-			  </div>
+                <img
+                  className="bg-white rounded-2xl h-full w-full aspect-square "
+                  src={cartoon}
+                />
+              </div>
             </div>
           </div>
         </div>

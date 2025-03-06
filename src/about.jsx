@@ -13,7 +13,7 @@ export default function About() {
       className="flex flex-col h-auto p-5 items-center "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.33 }}
+      viewport={{ amount: 0.33, once: true }}
       transition={{ duration: 0.7 }}
     >
       <div className=" w-full text-left">
