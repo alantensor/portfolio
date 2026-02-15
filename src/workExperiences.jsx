@@ -3,16 +3,23 @@ import { motion } from "framer-motion";
 export default function WorkExperiences() {
   const experiences = [
     {
-      company: "Tetra Tech",
-      role: "Software Engineer Co-op",
+      company: "Amazon",
+      role: "Software Developer Intern",
       period: "Incoming",
+      // description: "Studying Computer Science at UBC",
+      link: "https://aws.amazon.com/"
+    },
+    {
+      company: "Tetra Tech",
+      role: "Software Developer Co-op",
+      period: "Jan 2026 - Present",
       // description: "Studying Computer Science at UBC",
       link: "https://www.tetratech.com/"
     },
     {
       company: "Intern Insider",
       role: "Software Engineer",
-      period: "2024 - Present",
+      period: "Sep 2025 - Dec 2025",
       // description: "Helping 100k students find internships. Working on full-stack development and distributed systems.",
       link: "https://interninsider.me"
     },
