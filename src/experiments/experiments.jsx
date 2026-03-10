@@ -34,8 +34,7 @@ export default function Experiments() {
         </motion.div>
 
         <p className="text-neutral-600 dark:text-neutral-300 leading-relaxed mb-12">
-          Weekend builds, shader doodles, and tooling spikes that may or may not
-          make it into the main portfolio.
+          Weekend builds, shader doodles, and tooling spikes.
         </p>
 
         <div className="space-y-8">

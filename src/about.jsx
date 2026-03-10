@@ -1,62 +1,38 @@
 import { motion } from "framer-motion";
 import { ts } from "./ts";
 
+function Link({ href, children }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="link">
+      {children}
+    </a>
+  );
+}
+
 export default function About() {
   return (
     <section className="mb-16">
       <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
         20. Developer and CS + Math student{" "}
-        <a
-          href="https://www.ubc.ca"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          @UBC
-        </a>
+        <Link href="https://www.ubc.ca">@UBC</Link>
         .
       </p>
       <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
         Interested in distributed systems, full-stack development, and machine
-        learning. Currently helping 100k students find internships with{" "}
-        <a
-          href="https://interninsider.me"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          Intern Insider
-        </a>
+        learning. Previously, I helped 100k students find internships with{" "}
+        <Link href="https://interninsider.me">Intern Insider</Link>
         .
       </p>
       <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
+         Incoming intern on the Frontier Agents team at <Link href="https://aws.amazon.com">AWS</Link>. Worked on maps and flood detection for North American railroad lines at <Link href={"https://tetratech.com"}>Tetra Tech</Link>.
+      </p>
+      <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
         I also represented UBC at{" "}
-        <a
-          href="https://icpc.global/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          ACM-ICPC
-        </a>{" "}
+        <Link href="https://icpc.global/">ACM-ICPC</Link>{" "}
         Regionals in{" "}
-        <a
-          href="https://icpc.global/regionals/finder/PacNW-2024/standings"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          2023
-        </a>{" "}
+        <Link href="https://icpc.global/regionals/finder/PacNW-2024/standings">2023</Link>{" "}
         and{" "}
-        <a
-          href="https://icpc.global/regionals/finder/PacNW-2025/standings"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="link"
-        >
-          2024
-        </a>
+        <Link href="https://icpc.global/regionals/finder/PacNW-2025/standings">2024</Link>
         . When I'm not at the computer, I enjoy playing basketball, hiking the
         BC backcountry, and writing music.
       </p>
