@@ -24,7 +24,7 @@ export default function About() {
         .
       </p>
       <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
-         Incoming intern on the Frontier Agents team at <Link href="https://aws.amazon.com">AWS</Link>. Worked on maps and flood detection for North American railroad lines at <Link href={"https://tetratech.com"}>Tetra Tech</Link>.
+         Incoming intern on the Frontier Agents team at <Link href="https://aws.amazon.com">AWS</Link>. Worked on maps and flood detection for North American rail at <Link href={"https://tetratech.com"}>Tetra Tech</Link>.
       </p>
       <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
         I also represented UBC at{" "}
