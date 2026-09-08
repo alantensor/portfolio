@@ -5,14 +5,14 @@ export default function WorkExperiences() {
     {
       company: "Amazon",
       role: "Software Developer Intern",
-      period: "Incoming",
+      period: "May 2026 - Aug 2026",
       // description: "Studying Computer Science at UBC",
       link: "https://aws.amazon.com/"
     },
     {
       company: "Tetra Tech",
       role: "Software Developer Co-op",
-      period: "Jan 2026 - Present",
+      period: "Jan 2026 - May 2026",
       // description: "Studying Computer Science at UBC",
       link: "https://www.tetratech.com/"
     },
